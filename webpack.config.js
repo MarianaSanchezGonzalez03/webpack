@@ -14,11 +14,13 @@ module.exports={
         rules:[
             {
                 test: /\.js?$/,
-                esclude: /node_modules/,
+                exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
-                }
-            } 
+            
+                    }
+                },
+            
         ]
     },
     plugins: [
